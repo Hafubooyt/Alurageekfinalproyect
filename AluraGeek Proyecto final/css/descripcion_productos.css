@@ -1,0 +1,270 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #3483FA;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Header */
+.header {
+    background-color: #FFF159;
+    padding: 16px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    height: 40px;
+}
+
+.search-form {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+    margin-left: 16px;
+}
+
+.search-input {
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.search-button {
+    padding: 10px 16px;
+    background-color: #3483FA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+.productos_contenedor {
+    padding: 32px 10%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+}
+
+.producto_principal {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.img_producto {
+    max-width: 560px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.detalles {
+    padding: 16px;
+}
+
+.nombre_prod {
+    font-weight: 600;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.precio_prod {
+    font-weight: 700;
+    font-size: 24px;
+    color: #00A650;
+    margin-bottom: 16px;
+}
+
+.descripcion_prod {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+/* Productos similares */
+.productos_all {
+    padding-bottom: 16px;
+}
+
+.productos_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    margin: 16px 0;
+}
+
+.productos_similares_descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 174px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #FFFFFF;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.img_class {
+    width: 100%;
+    height: 174px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.nombre_producto {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 8px 0;
+    color: #333333;
+}
+
+.precio_producto {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #00A650;
+}
+
+.link_producto {
+    font-weight: 700;
+    font-size: 14px;
+    color: #3483FA;
+}
+
+/* Footer */
+.footer {
+    background: #F5F5F5;
+    padding: 32px 10%;
+    margin-top: 32px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-input, .contact-textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-button {
+    padding: 12px 24px;
+    background: #3483FA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .img_producto {
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .producto_principal, .productos_similares_descripcion {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .productos_similares_descripcion {
+        gap: 24px;
+    }
+    
+    .productos_title, .productos_contenedor {
+        padding: 16px 5%;
+    }
+    
+    .nombre_prod {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .img_class {
+        width: 156px;
+        margin-bottom: 16px;
+    }
+    
+    .productos_similares_descripcion {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .contenedor {
+        flex-basis: calc(50% - 10px);
+        text-align: center;
+    }
+}

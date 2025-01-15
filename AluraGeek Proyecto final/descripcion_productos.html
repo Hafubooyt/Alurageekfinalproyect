@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | E-commerce</title>
+    <link rel="shortcut icon" href="./img/Vector.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/descripcion_productos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="./index.html">
+                <img src="./img/Logo.png" alt="AluraGeek" class="header-logo">
+            </a>
+            <form class="search-form">
+                <input type="search" class="search-input" placeholder="¿Qué deseas buscar?" required>
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+    
+    <main class="productos_contenedor">
+        <section class="producto_principal" data-detalle>
+            <img src="./img/unsplash_6FDXGY9J6y4.png" alt="Producto" class="img_producto">
+            <div class="detalles">
+                <h1 class="nombre_prod">Producto XYZ</h1>
+                <h5 class="precio_prod">$60.00</h5>
+                <p class="descripcion_prod">
+                    Voluptas voluptatum quibusdam similique, facilis fusce! Ullam conubia?
+                </p>
+            </div>
+        </section>
+        
+        <section class="productos_all">
+            <div class="productos_title">
+                <h2 class="title_similar">Productos similares</h2>
+            </div>
+            <div class="productos_similares_descripcion" data-similar>
+                <div class="contenedor block_principal">
+                    <img src="./img/unsplash_0POwK6iAiRQ.png" alt="Producto 1" class="img_class">
+                    <ul>
+                        <li class="nombre_producto">Producto 1</li>
+                        <li class="precio_producto">$40.00</li>
+                        <li><a href="#" class="link_producto">Ver producto</a></li>
+                    </ul>
+                </div>
+                <div class="contenedor block_principal">
+                    <img src="./img/unsplash_caNzzoxls8Q.png" alt="Producto 2" class="img_class">
+                    <ul>
+                        <li class="nombre_producto">Producto 2</li>
+                        <li class="precio_producto">$50.00</li>
+                        <li><a href="#" class="link_producto">Ver producto</a></li>
+                    </ul>
+                </div>
+                <div class="contenedor block_principal">
+                    <img src="./img/unsplash_ZV7lnfyQLmA.png" alt="Producto 3" class="img_class">
+                    <ul>
+                        <li class="nombre_producto">Producto 3</li>
+                        <li class="precio_producto">$45.00</li>
+                        <li><a href="#" class="link_producto">Ver producto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-menu">
+                <a href="./index.html">
+                    <img src="./img/Logo.png" alt="AluraGeek" class="footer-logo">
+                </a>
+                <ul class="footer-links">
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Programa de fidelidad</a></li>
+                    <li><a href="#">Nuestras Tiendas</a></li>
+                    <li><a href="#">Quiero ser franquiciado</a></li>
+                    <li><a href="#">Anúncie aquí</a></li>
+                </ul>
+            </div>
+            
+            <form class="contact-form">
+                <fieldset>
+                    <legend>Hable con nosotros</legend>
+                    <input type="text" placeholder="Nombre" class="contact-input" required pattern="[\s\S]{4,40}">
+                    <textarea placeholder="Escribe tu mensaje" class="contact-textarea" required pattern="[\s\S]{5,120}"></textarea>
+                </fieldset>
+                <button type="submit" class="contact-button">Enviar mensaje</button>
+            </form>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Desarrollado por Ruben Hernandez 2024</p>
+        </div>
+    </footer>
+
+    <script src="./js/search.js"></script>
+    <script type="module" src="./js/validacion_rodapie.js"></script>
+    <script type="module" src="./js/detalles_prod.js"></script>
+</body>
+</html>
